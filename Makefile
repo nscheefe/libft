@@ -19,8 +19,7 @@ $(NAME): $(OBJS)
 	@ar rcs $(NAME) $(OBJS) ./libft/libft.h ./get_next_line/get_next_line.h ./get_next_line/get_next_line_bonus.h ./ft_printf/ft_printf.h
 
 clean:
-	rm -rf ./libft/*.o ./ft_printf/*.o ./get_next_line/*.o
-
+	rm -rf $(OBJS)
 fclean: clean
 	@rm -f ./libft/$(NAME) ./$(NAME)
 
