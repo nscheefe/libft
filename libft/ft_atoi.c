@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(const char *nptr)
+long	ft_atoi(const char *nptr)
 {
 	long long	ret;
-	int			mop;
+	long long	mop;
 
 	ret = 0;
 	mop = 1;
@@ -31,5 +31,5 @@ int	ft_atoi(const char *nptr)
 		ret = 10 * ret + (*nptr - '0');
 		nptr++;
 	}
-	return ((long long)ret * mop);
+	return (ret * mop);
 }
